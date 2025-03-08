@@ -1,0 +1,7 @@
+{
+  "extends": ["plugin:@angular-eslint/recommended", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true, "semi": true }]
+  },
+  "plugins": ["prettier"]
+}
