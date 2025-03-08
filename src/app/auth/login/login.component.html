@@ -1,1 +1,44 @@
-<p>login works!</p>
+<div class="login-container">
+    <mat-card class="login-card">
+        <h2 class="title">Think it. Make it.</h2>
+        <p class="subtitle">Log in to your Notion account</p>
+
+        <div class="social-buttons">
+            <button mat-stroked-button class="social-btn">
+                Continue with Google
+            </button>
+            <button mat-stroked-button class="social-btn">
+                Continue with Apple
+            </button>
+            <button mat-stroked-button class="social-btn">
+                Continue with Microsoft
+            </button>
+            <button mat-stroked-button class="social-btn">
+                Log in with passkey
+            </button>
+            <button mat-stroked-button class="social-btn">
+                Single sign-on (SSO)
+            </button>
+        </div>
+
+        <!-- Email Input -->
+        <mat-form-field appearance="outline" class="input-field">
+            <mat-label>Email or User Name</mat-label>
+            <input matInput type="email" placeholder="Enter your email address" />
+        </mat-form-field>
+
+        <!-- Password Input -->
+        <mat-form-field appearance="outline" class="input-field">
+            <mat-label>Password</mat-label>
+            <input matInput [type]="hidePassword ? 'password' : 'text'"
+                placeholder="Enter your password" />
+        </mat-form-field>
+
+        <button mat-flat-button color="primary" class="continue-btn">Continue</button>
+
+        <p class="info-text">
+            New to Haru's World <a routerLink="/register" routerLinkActive="active"> Create an
+                account</a>
+        </p>
+    </mat-card>
+</div>

@@ -1,0 +1,112 @@
+.register-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Section (Dark Themed) */
+.left-section {
+  flex: 1;
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.left-section h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.left-section p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.left-section a {
+  margin-top: 15px;
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.left-section a:hover {
+  text-decoration: underline;
+}
+
+/* Right Section (Form) */
+.right-section {
+  flex: 1;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-card {
+  width: 400px;
+  text-align: left;
+}
+
+.register-card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.password-info,
+.username-info {
+  font-size: 12px;
+  color: #666;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.continue-btn {
+  width: 100%;
+  background: black;
+  color: white;
+  height: 48px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.continue-btn:hover {
+  background: #333;
+}
+
+.terms {
+  font-size: 12px;
+  color: #666;
+  margin-top: 15px;
+}
+
+.terms a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.login-link {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.login-link a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

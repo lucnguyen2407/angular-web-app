@@ -1,0 +1,34 @@
+<mat-toolbar color="white" class="navbar">
+  <div class="logo">
+    <span routerLink="/" routerLinkActive="active">Notion</span>
+  </div>
+
+  <div class="nav-links">
+    <button mat-button [matMenuTriggerFor]="productMenu">Product</button>
+    <mat-menu #productMenu="matMenu">
+      <button mat-menu-item>Overview</button>
+      <button mat-menu-item>Features</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="teamsMenu">Teams</button>
+    <mat-menu #teamsMenu="matMenu">
+      <button mat-menu-item>Small Teams</button>
+      <button mat-menu-item>Enterprise</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="individualsMenu">Individuals</button>
+    <mat-menu #individualsMenu="matMenu">
+      <button mat-menu-item>Personal</button>
+      <button mat-menu-item>Students</button>
+    </mat-menu>
+
+    <button mat-button>Download</button>
+    <button mat-button>Pricing</button>
+  </div>
+
+  <div class="auth-buttons">
+    <button mat-button>Request a demo</button>
+    <button routerLink="/login" routerLinkActive="active" mat-button>Log in</button>
+    <button mat-raised-button color="primary" class="get-started">Get started</button>
+  </div>
+</mat-toolbar>

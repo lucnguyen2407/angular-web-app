@@ -1,1 +1,55 @@
-<p>register works!</p>
+<div class="register-container">
+    <!-- Left Side (Dark Background with Animation/Graphics) -->
+    <div class="left-section">
+        <h1>Create your free account</h1>
+        <p>Explore GitHub’s core features for individuals and organizations.</p>
+        <a href="#">See what’s included ⌄</a>
+    </div>
+
+    <!-- Right Side (Form Section) -->
+    <div class="right-section">
+        <div class="register-card">
+            <h2>Sign up to GitHub</h2>
+
+            <mat-form-field appearance="outline" class="input-field">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" placeholder="Email" />
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="input-field">
+                <mat-label>Password</mat-label>
+                <input matInput [type]="hidePassword ? 'password' : 'text'"
+                    placeholder="Password" />
+            </mat-form-field>
+
+            <p class="password-info">
+                Password should be at least 15 characters OR at least 8 characters including a
+                number and a lowercase letter.
+            </p>
+
+            <mat-form-field appearance="outline" class="input-field">
+                <mat-label>Username</mat-label>
+                <input matInput type="text" placeholder="Username" />
+            </mat-form-field>
+
+            <p class="username-info">
+                Username may only contain alphanumeric characters or single hyphens, and cannot
+                begin or end with a hyphen.
+            </p>
+
+            <button mat-flat-button color="primary" class="continue-btn">Continue →</button>
+
+            <p class="terms">
+                By creating an account, you agree to the <a href="#">Terms of Service</a>. For more
+                information about GitHub’s
+                privacy practices, see the <a href="#">GitHub Privacy Statement</a>. We’ll
+                occasionally send you account-related emails.
+            </p>
+
+            <p class="login-link">
+                Already have an account? <a routerLink="/login" routerLinkActive="active">Sign in
+                    →</a>
+            </p>
+        </div>
+    </div>
+</div>
