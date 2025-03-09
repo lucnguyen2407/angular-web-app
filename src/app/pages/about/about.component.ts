@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { CounterComponent } from "../../components/counter/counter.component";
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [CounterComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
-export class AboutComponent {}
+export class AboutComponent {
+  counterValue = 10;
+}
